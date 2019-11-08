@@ -43,11 +43,15 @@ p {
   color: #666666;
   font-size: 18px;
 }
-
+.social-icons-center{
+  padding-top: 7px;
+    padding-left: 51px;
+}
 body {
   overflow: hidden;
   overflow-y: auto;
   font-family: "OpenSans-Regular";
+  scroll-behavior: smooth;
 }
 
 @media (min-width: 1200px) {

@@ -30,9 +30,7 @@
       <div class="col-md-6 col-sm-6 clearfix"> 
         <!--social-->
         <ul class="social text-center">
-          <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="https://www.facebook.com/FinQmm" target="_blank"><i class="fa fa-facebook"></i></a></li>
         </ul>
         <!--social end--> 
       </div>
@@ -43,13 +41,14 @@
       <div class="row">
         <div class="col-md-6 center-block">
           <header class="welcome-message text-center">
-            <h1>Get <span class="highlight">Early Access</span></h1>
+            <h1><span class="highlight">စနစ်တကျ​ငွေ​ကြေးသုံးစွဲခြင်းအားဖြင့် တိုးပွားလာမည့် ကြွယ်ဝချမ်းသာမှုကိုကြိုဆိုလိုက်ပါ...</span></h1>
             <h2>Subscribe Now</h2>
             <!--sub-form-->
             <div class="sub-form">
-              <form role="form" id="mc-form" action="http://csmthemes.us3.list-manage.com/subscribe/post-json?u=9666c25a337f497687875a388&amp;id=5b881a50fb&amp;c=?">
-                <input type="email" placeholder="Email Address" required value="" name="EMAIL">
-                <button type="submit" class="button" id="mc-subscribe" value="Subscribe" name="subscribe">GET ACCESS</button>
+              <form role="form" id="myForm" action="http://csmthemes.us3.list-manage.com/subscribe/post-json?u=9666c25a337f497687875a388&amp;id=5b881a50fb&amp;c=?">
+                <input type="text" placeholder="Full Name" required value="" name="full_name">
+                <input type="email" placeholder="Email Address" required value="" name="email">
+                <button onclick='SubForm()' type="submit" class="button" id="mc-subscribe" value="Subscribe" name="subscribe">GET ACCESS</button>
               </form>
               <p class="terms">* We won’t spam</p>
               <p id="mc-notification"></p>
@@ -67,36 +66,6 @@
 </div>
 <!--hero-unit end--> 
 
-<!--countdown timer-->
-<div class="timer section-spacing">
-  <div class="container">
-    <h2 class="text-center">TIME LEFT FOR LAUNCH</h2>
-    <div class="row">
-      <div class="col-md-12"> 
-        <!-- Countdown-->
-        <ul class="countdown text-center">
-          <li class="slide-left"> <span class="days">00</span>
-            <p class="days_ref">days</p>
-          </li>
-          <li class="slide-left seperator">:</li>
-          <li class="slide-bottom"> <span class="hours">00</span>
-            <p class="hours_ref">hours</p>
-          </li>
-          <li class="slide-bottom seperator">:</li>
-          <li class="slide-top"> <span class="minutes">00</span>
-            <p class="minutes_ref">minutes</p>
-          </li>
-          <li class="slide-top seperator">:</li>
-          <li class="slide-right"> <span class="seconds">00</span>
-            <p class="seconds_ref">seconds</p>
-          </li>
-        </ul>
-        <!-- Countdown end--> 
-      </div>
-    </div>
-  </div>
-</div>
-<!--countdown timer end--> 
 
 <!--features-->
 <section class="features text-center section-spacing"> 
@@ -106,20 +75,20 @@
     <div class="row">
       <div class="col-md-4">
         <div class="slide-left feature"> <img src="img/feature-1.png" data-at2x="img/feature-1@2x.png" alt="feature">
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, iusto, cupiditate, mollitia harum culpa blanditiis iure nisi.</p>
+          <h3>Save</h3>
+          <p>It’s good to have money and the things that money can buy, but it’s good, too, to check up once in a while and make sure that you haven’t lost the things that money can’t buy.</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="slide-top feature"> <img src="img/feature-2.png" data-at2x="img/feature-2@2x.png" alt="feature">
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, iusto, cupiditate, mollitia harum culpa blanditiis iure nisi.</p>
+          <h3>Protect</h3>
+          <p>It’s good to have money and the things that money can buy, but it’s good, too, to check up once in a while and make sure that you haven’t lost the things that money can’t buy.</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="slide-right feature"> <img src="img/feature-3.png" data-at2x="img/feature-3@2x.png" alt="feature">
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, iusto, cupiditate, mollitia harum culpa blanditiis iure nisi.</p>
+          <h3>Grow</h3>
+          <p>It’s good to have money and the things that money can buy, but it’s good, too, to check up once in a while and make sure that you haven’t lost the things that money can’t buy.</p>
         </div>
       </div>
     </div>
@@ -156,8 +125,40 @@
 </div>
 <!--counter end--> 
 
+<!--countdown timer-->
+<div class="timer section-spacing">
+  <div class="container">
+    <h2 class="text-center">TIME LEFT FOR LAUNCH</h2>
+    <div class="row">
+      <div class="col-md-12"> 
+        <!-- Countdown-->
+        <ul class="countdown text-center">
+          <li class="slide-left"> <span class="days">00</span>
+            <p class="days_ref">days</p>
+          </li>
+          <li class="slide-left seperator">:</li>
+          <li class="slide-bottom"> <span class="hours">00</span>
+            <p class="hours_ref">hours</p>
+          </li>
+          <li class="slide-bottom seperator">:</li>
+          <li class="slide-top"> <span class="minutes">00</span>
+            <p class="minutes_ref">minutes</p>
+          </li>
+          <li class="slide-top seperator">:</li>
+          <li class="slide-right"> <span class="seconds">00</span>
+            <p class="seconds_ref">seconds</p>
+          </li>
+        </ul>
+        <!-- Countdown end--> 
+      </div>
+    </div>
+  </div>
+</div>
+<!--countdown timer end--> 
+
+
 <!-- contact-->
-<section class="contact section-spacing" id="contact">
+<section hidden class="contact section-spacing" id="contact">
   <h2 class="text-center">CONTACT US</h2>
   <div class="container">
     <div class="row">
@@ -204,10 +205,7 @@
         
         <!--Social media-->
         <ul class="social-footer">
-          <li class="slide-left"><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-          <li class="slide-top"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-          <li class="slide-top"><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-          <li class="slide-right"><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li class="slide-top"><a href="https://www.facebook.com/FinQmm" target="_blank"><i class="fa fa-facebook"></i></a></li>
         </ul>
         <!--Social media end--> 
         
@@ -226,7 +224,7 @@
 <!--end PRELOAD--> 
 
 <!--Theme switcher-->
-<div id="customizer" class="panel-closed text-center"> <span class="panel-control"><span class="cog"></span></span>
+<!-- <div id="customizer" class="panel-closed text-center"> <span class="panel-control"><span class="cog"></span></span>
   <div id="options">
     <div class="options-head"> Style Switcher </div>
     <div class="options-box clearfix">
@@ -239,9 +237,27 @@
       </ul>
     </div>
   </div>
-</div>
+</div> -->
 <!--Theme switcher end--> 
-
+<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+<script>
+  function SubForm (){
+    $.ajax({
+      url:"https://api.apispreadsheets.com/data/14803/",
+      type:"post",
+      data:$("#myForm").serializeArray(),
+      success: function(){
+        alert("Form Data Submitted :)")
+      },
+      error: function(){
+        alert("There was an error :(")
+      }
+    });
+  }
+</script>
 <script src="js/jquery-1.11.1.min.js"></script> 
 <script src="js/retina.min.js"></script> 
 <script src="js/waypoints.min.js"></script> 
